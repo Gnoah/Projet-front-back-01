@@ -21,12 +21,12 @@ componentDidMount() {
 tanisa() {
   var obj = JSON.parse(this.state.apiResponse);
   for(let i=0; i<obj.length; i++){
-    console.log(obj[i].nom);
-    document.getElementById("liste").innerHTML += obj[i].nom+" "+obj[i].prenom+"<br/>";
+    console.log(obj[i].image);
+    document.getElementById("liste").innerHTML += " <table><tr><img src='http://localhost:8080"+obj[i].image+"' width='50'/</tr><tr><td>Nom:"+obj[i].nom+" </td><td>Prenom:"+obj[i].prenom+"</td></tr></table> <br/>";
   }
   
-  //document.getElementById("liste").innerHTML = obj.map(obj.nom);
 }
+
 
 render() {
   
@@ -35,36 +35,15 @@ render() {
       
       <button onClick={()=>
         this.tanisa()
-        /*liste = document.getElementById("liste")
-        liste.innerHTML = numbers.map(obj);*/
         
       }        
       >Lister</button><br/> 
       <span id="liste"></span>
+
     </div>
+      
     );
 }
-  /*constructor(props) { 
-    super(props); 
-    this.state = { 
-      results: null
-    }; 
-
-   }  
-   componentDidMount() { 
-    const data = new FormData(); 
-    fetch('http://localhost:8080/list',{    method: 'POST',   body : data })   
-    .then(     (response) => { 
-    console.log("response");        
-    console.log(response);         
-    response.json().then((result)=>this.setState({ results: result }))      
-   } )// if the response is a JSON object   )
-   .catch(   error => null )      }   
-   render() {
-    return (   
-    <div className="Files"> 
-    <button onClick={this.state.list}>Lister</button>  
-   </div>   );   
-  }*/
+  
 };
   
