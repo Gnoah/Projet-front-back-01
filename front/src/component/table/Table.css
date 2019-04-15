@@ -1,0 +1,18 @@
+.btn-secondary{
+    margin-left: 15px;
+}
+.btn-secondary:hover{
+    background-color: rgb(177, 174, 169)!important;
+    color: rgb(3, 2, 0)!important;
+}
+#centr{
+    margin-left: 60px;
+}
+#ground{
+    padding-top: 20px;
+    padding-left: 35px;
+    background-color: rgb(241, 236, 225);
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+}
