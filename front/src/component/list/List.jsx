@@ -31,6 +31,7 @@ export default class List extends Component {
           < Ajouter/>
           <table className="table table-striped" style={{ marginTop: 20 }}>  
             <thead>
+              <th>Id</th>
               <th>Nom</th>
               <th>Prénom</th>
               <th>Actions</th>
