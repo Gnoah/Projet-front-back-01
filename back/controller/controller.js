@@ -53,7 +53,7 @@ const modifier = (request, response)  =>{
      let data = JSON.stringify(obj); 
      console.log('DATA: ',data) 
      fs.writeFileSync('model/note.json', data); 
-     response.send(obj);
+     response.redirect('http://localhost:3000/list');
      response.end()
 }
 
@@ -67,7 +67,8 @@ const ajouter = (request, response) => {
     obj.push({id:(parseInt(obj[obj.length-1].id)+1).toString(),nom:name,prenom:pren})
      let data = JSON.stringify(obj); 
      fs.writeFileSync('model/note.json', data); 
-     response.send(obj);
+     //response.send(obj);
+     response.redirect('http://localhost:3000/list');
      response.end()
 }
 
@@ -83,7 +84,7 @@ const effacer = (request, response) => {
       let data = JSON.stringify(obj); 
       console.log('DATA: ',data) 
       fs.writeFileSync('model/note.json', data); 
-      response.send(obj);
+      response.redirect('http://localhost:3000/list');
       response.end()
 }
 
