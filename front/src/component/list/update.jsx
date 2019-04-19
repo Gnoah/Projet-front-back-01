@@ -24,7 +24,7 @@ export default class Put extends Component{
                               <span>Nom:</span><input type="text" name="nom"  placeholder={List.props.obj.nom} />
                               <span>Prenom:</span><input type="text" name="prenom"  placeholder={List.props.obj.prenom} />
                               <input type="hidden" name="id" />
-                              <button type="submit">Ok</button>
+                              <button type="submit">OK</button>
                               </form>
                           </div>
                             

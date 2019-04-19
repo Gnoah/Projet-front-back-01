@@ -3,3 +3,17 @@ p{
     margin-top: 90px;
     font-size: 50px;
 }
+thead{
+    text-align: center;
+    background-color: rgb(18, 58, 110);
+    color: rgb(242, 248, 250);
+}
+tbody{
+    text-align: center;
+    background-color: rgb(241, 247, 248);
+}
+
+.spins{
+    background: #fff;
+  }
+  

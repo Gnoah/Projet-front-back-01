@@ -63,8 +63,14 @@ const ajouter = (request, response) => {
     var name = request.body.nom;
     var pren = request.body.prenom;
     //var pic = request.body.image;
-    //var num = request.body.id;
-    obj.push({id:(parseInt(obj[obj.length-1].id)+1).toString(),nom:name,prenom:pren})
+     if (obj.length>0){
+          var ido = parseInt(obj[obj.length-1].id)+1;
+     }
+     else{
+          ido = 0;
+     }
+    
+     obj.push({id:ido.toString(),nom:name,prenom:pren})
      let data = JSON.stringify(obj); 
      fs.writeFileSync('model/note.json', data); 
      //response.send(obj);

@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add reactstrap
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add react-spinners --save
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz: ETIMEDOUT
+  Error: https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz: ETIMEDOUT
       at Timeout._onTimeout (/usr/share/yarn/lib/cli.js:130201:19)
       at listOnTimeout (internal/timers.js:535:17)
       at processTimers (internal/timers.js:479:7)
@@ -26,12 +26,13 @@ npm manifest:
     "private": true,
     "dependencies": {
       "axios": "^0.18.0",
+      "bootstrap": "^4.3.1",
       "cors": "^2.8.5",
       "mdbreact": "^4.12.0",
-      "react": "^16.8.3",
+      "react": "^16.8.6",
       "react-axios": "^2.0.3",
       "react-confirm-alert": "^2.4.1",
-      "react-dom": "^16.8.3",
+      "react-dom": "^16.8.6",
       "react-router": "^4.3.1",
       "react-router-dom": "^4.3.1",
       "react-scripts": "2.1.5"
@@ -1963,6 +1964,11 @@ Lockfile:
     version "4.3.1"
     resolved "https://registry.yarnpkg.com/bootstrap-css-only/-/bootstrap-css-only-4.3.1.tgz#b92b028c9259ce10a6f9ab2957c2812df1aaa202"
     integrity sha512-xPQNmTR6skX7boM3Q/K2vWDL8RFhfHm5PbTcn/vd7nZtkzg9tc6ScNreIIsMaP9QLUxeqvUx+OGnDaiK4KBRiQ==
+  
+  bootstrap@^4.3.1:
+    version "4.3.1"
+    resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
+    integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
   
   bowser@^1.7.3:
     version "1.9.4"
@@ -8389,16 +8395,6 @@ Lockfile:
       strip-ansi "5.0.0"
       text-table "0.2.0"
   
-  react-dom@^16.8.3:
-    version "16.8.3"
-    resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.3.tgz#ae236029e66210783ac81999d3015dfc475b9c32"
-    integrity sha512-ttMem9yJL4/lpItZAQ2NTFAbV7frotHk5DZEHXUOws2rMmrsvh1Na7ThGT0dTzUIl6pqTOi5tYREfL8AEna3lA==
-    dependencies:
-      loose-envify "^1.1.0"
-      object-assign "^4.1.1"
-      prop-types "^15.6.2"
-      scheduler "^0.13.3"
-  
   react-dom@^16.8.6:
     version "16.8.6"
     resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
@@ -8586,16 +8582,6 @@ Lockfile:
       loose-envify "^1.4.0"
       prop-types "^15.6.2"
       react-lifecycles-compat "^3.0.4"
-  
-  react@^16.8.3:
-    version "16.8.3"
-    resolved "https://registry.yarnpkg.com/react/-/react-16.8.3.tgz#c6f988a2ce895375de216edcfaedd6b9a76451d9"
-    integrity sha512-3UoSIsEq8yTJuSu0luO1QQWYbgGEILm+eJl2QN/VLDi7hL+EN18M3q3oVZwmVzzBJ3DkM7RMdRwBmZZ+b4IzSA==
-    dependencies:
-      loose-envify "^1.1.0"
-      object-assign "^4.1.1"
-      prop-types "^15.6.2"
-      scheduler "^0.13.3"
   
   react@^16.8.6:
     version "16.8.6"
@@ -9082,14 +9068,6 @@ Lockfile:
     version "1.2.4"
     resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
     integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-  
-  scheduler@^0.13.3:
-    version "0.13.3"
-    resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.3.tgz#bed3c5850f62ea9c716a4d781f9daeb9b2a58896"
-    integrity sha512-UxN5QRYWtpR1egNWzJcVLk8jlegxAugswQc984lD3kU7NuobsO37/sRfbpTdBjtnD5TBNFA2Q2oLV5+UmPSmEQ==
-    dependencies:
-      loose-envify "^1.1.0"
-      object-assign "^4.1.1"
   
   scheduler@^0.13.6:
     version "0.13.6"

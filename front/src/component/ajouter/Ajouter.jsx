@@ -24,12 +24,16 @@ componentDidMount() {
         return(
             <div>
                 <form className="form-inline" action={"http://localhost:8080/list"} method="POST" style={{ marginTop: 20, marginBottom: 30 } }>
-                    <label for="nom" className="mr-sm-2"> Nom</label> <input type="text" name="nom" required="true" className="form-control mr-sm-2"/>
-                    <label for="prenom" className="mr-sm-2"> Prenom</label> <input type="text" name="prenom" required="true" className="form-control mr-sm-2"/>
-                    <button className="btn btn-primary mr-sm-2">Ajouter</button>
+                    <label for="nom" className="imput mr-sm-2"> Nom</label> <input type="text" name="nom" required="true" className="form-control mr-sm-2"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="prenom" className="imput mr-sm-2"> Prénom</label> <input type="text" name="prenom" required="true" className="form-control mr-sm-2"/>
+                    <div className="ajout">
+                        <button className="btn btn-primary btn-block" >Ajouter</button>
+                    </div>
+                   
                 </form>
             </div>
             
         )
     }
 };
+
